@@ -60,6 +60,12 @@ metadata:
   ...
 ```
 
+{{< note >}}
+Owner references allow resources in the same namespace as the dependents, or
+cluster-scoped resources. However, cross-namespace owner references is
+disallowed by design.
+{{< /note >}}
+
 ## Controlling how the garbage collector deletes dependents
 
 When you delete an object, you can specify whether the object's dependents are
